@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="opera-styles.css" type="text/chrome/safari" />
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="ie-styles.css" />  
+<![endif]-->
+<title>Contact / Info</title>
+
+
+<script type="text/javascript">
+ 	
+	
+	function validateUserData()
+	
+	{		
+		//keeps track of wheather we will go to the success page (flag variable *keep limited*)
+		var successState = true;
+		//****************************************//
+		//gets firstname and lastName and gender
+		var firstName = document.user_data_form.first_name.value;
+		var lastName = document.user_data_form.last_name.value;
+		var emailName = document.user_data_form.email_name.value;
+		
+		//****************************************//
+		//get the errors
+		var span_error_firstName = document.getElementById("error_first_name");
+		var span_error_lastName = document.getElementById("error_last_name");
+		var span_error_emailName = document.getElementById("error_email_name");
+		
+		//****************************************//
+		//clear error
+		span_error_firstName.innerHTML = "";
+		span_error_lastName.innerHTML = "";
+		span_error_emailName.innerHTML = "";
+		
+		//****************************************//
+			
+		//first name
+		if(!firstName)
+		{ 
+			
+			span_error_firstName.innerHTML = " * ";
+			successState = false;	
+		}
+		
+		else{
+			firstName.innerHTML = "";
+		}
+		
+		//****************************************//
+		
+		//last name
+		if(!lastName)
+		{ 
+			
+			span_error_lastName.innerHTML = " * ";
+			successState = false;	
+		}
+		
+		else{
+			lastName.innerHTML = "";
+		}
+		//****************************************//
+		
+		if(!emailName)
+		{ 
+			
+			span_error_emailName.innerHTML = " * ";
+			successState = false;	
+		}
+		
+		else{
+			emailName.innerHTML = "";
+		}
+		
+		return successState;
+		//return false;
+	}
+	
+
+ </script>
+				
+</head>
+
+<body>
+
+	<div id="c-wrapper">
+    	<div id="header">
+        	<h1><a href="index.html"><img src="img/logo.gif" /></a></h1>
+            
+        </div><!--End header-->
+        
+        <div id="nav">
+        	<ul>
+            	<li><a href="about-info.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume-info.html">Resume</a></li>
+                <li><a href="contact-info.html">Contact</a></li>
+      	   </ul>
+            
+        </div><!--End nav-->
+        
+        
+        <div id="c-port-container">
+        	
+             
+             
+             	<div id="c-PHPW-top">
+                
+                	<h3 class="p-h3"><img class="square" src="img/square.jpg" alt="square" />Email: Terrancejcunningham@gmail.com</h3><br /><br />
+                    <h3 class="p-h3"><img class="square" src="img/square.jpg" alt="square" />Phone: 206.419.7786</h3><br />
+                    <p class="inquires">(Send me a message today about web design inquires.)</p>
+                    
+                    
+                    <div id="contact-info_area">
+                        	<h4>Helping Staff</h4>
+                                <ul>
+                                	 <li>Terrance Cunningham <p class="contact-discription">(Web Designer)</p></li>
+                                    <li><a href="http://kirstenashley.com" target="_new" />Kirsten Ashely</a> <p class="contact-discription">(Graphics Designer/ Photographer)</p></li>
+                                    <li><a href="#" />Steve Devine</a> <p class="contact-discription">(Web Designer)</p></li>
+                                   
+                                    
+                                </ul>
+                                
+                                <img id="contact-image" src="img/contactus.jpg" alt="me" />
+                                
+                                
+                          </div> <!--End contact-info_area-->  
+                    
+                </div><!--end Pgamevault -->
+                <div id="c_form">
+                	<h2>Write me a question today!</h2>
+                    <p>Please use the form below to send me your question.</p>
+                <form name="user_data_form" action="contact.php" method="POST" enctype="text/html" onsubmit="return validateUserData()">
+   
+                           <!--first name-->
+                            First Name: 
+                            <input class="colorinput" type="text" size="26"  name="first_name"/><span id="error_first_name" class="error"></span><br />		    <br />
+                            
+                            <!--last name-->
+                            Last Name: 
+                            <input class="colorinput" type="text" size="26" name="last_name"/><span id="error_last_name" class="error"></span><br />
+                            <br />
+                            
+                            <!--last name-->
+                            Your Email: 
+                            <input class="colorinput" type="text" size="26" name="email_name"/><span id="error_email_name" class="error"></span><br />
+                            <br />
+                            
+                          	<!--last comments-->
+                           	Comments:
+                        	<div id="contactme"><textarea class="W-message" name="Message" size="26" cols="34px" rows="7">Contact me about custom web design.</textarea></div>
+                            
+                                 
+                            <input class="submit" type="submit" value="Click to Submit" />
+						</form><!--End form-->
+                
+                
+                </div>  
+                        
+                        
+             
+                
+        </div><!--End port-container-->
+           
+        
+        <div id="footer">
+        	<p>©copyright 2015 - Terrance Cunningham - Web Designer</p>
+        </div><!--End footer-->
+    
+    </div><!--End wrapper-->
+
+</body>
+</html>

@@ -1,1 +1,144 @@
-<h1>Hello World</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>Terrance Cunningham's Portfolio</title>
+ <link rel="stylesheet" href="opera-styles.css" type="text/chrome/safari" />
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="ie-styles.css" /> 
+    <!-- basic ALS css -->
+<link rel="stylesheet" type="text/css" media="screen" href="path/css/als_style.css" />
+
+<!-- your jQuery version -->
+<script type="text/javascript" src="path/js/jquery-last.min.js" ></script>
+
+<!-- your ALS version -->
+<script type="text/javascript" src="path/js/jquery.als-1.4.min.js" ></script>
+ 
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.als-1.2.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() 
+			{
+				$("#lista1").als({
+				visible_items: 4,
+				scrolling_items: 1,
+				orientation: "horizontal",
+				circular: "yes",
+				autoscroll: "no"
+				});
+				
+				<!-- in case i want to put other hover in their-->
+				/*function(){
+     $(this).attr('src','img/hpw-mp-thumb.jpg'); 
+}*/
+				
+				<!-- HOVER STATES-->
+		$('#hpw').hover(function(){
+    $(this).attr('src','img/hpw-mp-thumb-color.jpg');
+});
+
+$('#gv').hover(function(){
+    $(this).attr('src','img/gv-mp-thumbs-color.jpg');
+});
+
+$('#hard').hover(function(){
+    $(this).attr('src','img/hardware-mp-thumbs-color.jpg');
+});
+
+$('#psccu').hover(function(){
+    $(this).attr('src','img/psccu-mp-thumbs-color.jpg');
+});
+
+$('#hpwS').hover(function(){
+    $(this).attr('src','img/hpwStage-mp-thumbs-color.jpg');
+});
+
+$('#mb').hover(function(){
+    $(this).attr('src','img/mb-mp-thumbs-color.jpg');
+});
+
+$('#scccS').hover(function(){
+    $(this).attr('src','img/scccStaging-mp-thumbs-color.jpg');
+});
+						
+$('#dawn').hover(function(){
+    $(this).attr('src','img/dawn-mp-thumbs-color.jpg');
+});
+
+$('#albert').hover(function(){
+    $(this).attr('src','img/albert-mp-thumbs-color.jpg');
+});	
+
+$('#dental').hover(function(){
+    $(this).attr('src','img/dental-mp-thumbs-color.jpg');
+});			
+			
+			});
+</script>
+
+
+				
+</head>
+
+<body>
+
+	<div id="wrapper">
+    	<div id="header">
+        	<h1><a href="index.html"><img src="img/logo.gif" /></a></h1>
+            
+        </div><!--End header-->
+        
+        <div id="nav">
+        	<ul>
+            	<li><a href="about-info.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resume-info.html">Resume</a></li>
+                <li><a href="contact-info.html">Contact</a></li>
+      	   </ul>
+            
+        </div><!--End nav-->
+        
+        
+        <div id="container">
+        	
+            <div id="spotlight">
+            	<img src="img/spotlight-img1.jpg"  />
+        	</div><!--End spotlight-->
+        
+                <div id="slideshow">
+                    <div id="lista1" class="als-container">
+                        <span class="als-prev"><img src="images/thin_left_arrow_333.png" alt="prev" title="previous" /></span>
+                        <div class="als-viewport">
+                            <ul class="als-wrapper">
+                                <li class="als-item"><a href="portfolio.html#hpw"><img id="hpw" src="img/hpw-mp-thumb-color.jpg" alt="hpw" title="hpw" /><p class="imgDescription">Home Performance Washington</p></a></li>
+                                <li class="als-item"><a href="portfolio.html#gv"><img id="gv" src="img/gv-mp-thumbs-color.jpg" alt="gv" title="gv" /><p class="imgDescription">GameVault</p></a></li>
+                                <li class="als-item"><a href="portfolio.html#coast"><img id="hard" src="img/hardware-mp-thumbs-color.jpg" alt="hardware" title="hardware" /><p class="imgDescription">Coast Do It Best Hardware</p></a></li>
+                                <li class="als-item"><a href="portfolio.html#psccu"><img id="psccu" src="img/psccu-mp-thumbs-color.jpg" alt="psccu" title="psccu" /><p class="imgDescription">Puget Sound Cooperative Credit Union</p></a></li>
+                                <li class="als-item"><a href="hpw-info.html#hpwS"><img id="hpwS" src="img/hpwStage-mp-thumbs-color.jpg" alt="hpw-staging" title="hpw-staging" /><p class="imgDescription">Home Performance Washington staging area</p></a></li>
+                                <li class="als-item"><a href="portfolio.html#mb"><img id="mb" src="img/mb-mp-thumbs-color.jpg" alt="mb" title="mb" /><p class="imgDescription">MasterBuilders</p></a></li>
+                                <li class="als-item"><a href="albert-info.html#albertS"><img id="scccS" src="img/scccStaging-mp-thumbs-color.jpg" alt="sccc" title="sccc" /><p class="imgDescription">Seattle Central staging area</p></a></li>
+                                <li class="als-item"><a href="portfolio.html#dawn"><img id="dawn" src="img/dawn-mp-thumbs-color.jpg" alt="dawn" title="dawn" /><p class="imgDescription">Dawnologist</p></a></li>
+                                <li class="als-item"><a href="portfolio.html#albert"><img id="albert" src="img/albert-mp-thumbs-color.jpg" alt="albert" title="albert" /><p class="imgDescription">Albert Einstein</p></a></li>
+                                <li class="als-item"><a href="portfolio.html#dhms"><img id="dental" src="img/dental-mp-thumbs-color.jpg" alt="dental" title="dental" /><p class="imgDescription">Dental Hygiene Mobile Services</p></a></li>
+                                
+                            </ul>
+                        </div>
+                        <span class="als-next"><img src="images/thin_right_arrow_333.png" alt="next" title="next" /></span>
+                    </div>
+                
+                </div><!--End slideshow-->
+        
+        </div><!--End container-->
+        
+        <div id="footer">
+        	<p>©copyright 2015 - Terrance Cunningham - Web Designer</p>
+        </div><!--End footer-->
+    
+    </div><!--End wrapper-->
+
+</body>
+</html>

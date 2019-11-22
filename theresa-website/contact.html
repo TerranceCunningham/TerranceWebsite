@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Contact Us | Dental Hygiene Mobile Services</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.2.74.js"></script>
+
+<script type="text/javascript">
+ 	
+	var retVal = true;
+	
+	
+	$(document).ready(function() {
+		$('.error1').hide();
+
+		
+		
+		
+		$('#button2').click(function(){	
+		 //fName
+		retVal = true; 
+		var fname = $('#FN').val();
+		
+		if(fname == ''){
+		
+			$('#FN').next('.error1').show();
+			retVal = false;
+		}else{
+			$('#FN').next('.error1').hide();
+		}
+		//lName
+		var lname = $('#LN').val();
+		
+		if(lname == ''){
+		
+			$('#LN').next('.error1').show();
+			retVal = false;
+		}else{
+			$('#LN').next('.error1').hide();
+		}
+		
+		
+		var emailAd =  $('#email').val();
+		var addCode = /^[\w-]+(\.[\w-]+)*@([a-z0-9-]+(\.[a-z0-9-]+)*?\.[a-z]{2,6}|(\d{1,3}\.){3}\d{1,3})(:\d{4})?$/;
+		if(addCode.test(emailAd)){
+			$('#email').next('.error1').hide();
+			}
+			else{
+				$('#email').next('.error1').show();
+				retVal = false;
+
+			}
+		
+		return retVal;
+	});
+		
+		
+		
+	});
+
+ </script>
+
+
+</head>
+
+<body>
+<div id="shadow">
+    <div id="wrapper">
+        <div id="header">
+            <h1><a href="index.html" ><img class="logo" src="imgs/logo.png" alt="logo"/></a></h1>
+            <ul>
+                <li>Dental Hygiene Mobile Services, PLLC </li>
+                <li>PO Box 871712, Vancouver WA 98687</li>
+                <li>dhmobileservices@gmail.com</li>
+                <li>Tel: +1 (360) 545-3543</li>
+            </ul>
+        </div><!--End Header-->
+        
+        <div id="navigation">
+        	<ul>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="patient-form.html">Patient Form</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>             
+           	</ul>
+        
+        
+        </div><!--End Navigation-->
+        
+        <div id="contact-content_area">
+            <div id="contact-inner_content">
+            	<div id="contact-left_content_area">
+                	<h2>Contact Us</h2>
+                    	<p>Theresa Marks, founder of Dental Hygiene Mobile Services, PLLC, is a practicing dental hygienist with over 20 years experience.
+                        Theresa Marks, founder of Dental Hygiene Mobile Services, PLLC, is a practicing dental hygienist with over 20 years experience.<br /> 
+                        Theresa Marks, founder of Dental Hygiene Mobile Services, PLLC, is a practicing dental hygienist with over 20 years experience.
+                        Theresa Marks, founder of Dental Hygiene Mobile Services, PLLC, is a practicing dental hygienist with over 20 years experience.<br /> 
+                        Theresa Marks, founder of Dental Hygiene Mobile Services, PLLC, is a practicing dental hygienist with over 20 years experience.</p>
+                        
+                        
+                        <div id="contact-info_area">
+                        	<h4>Contact Info</h4>
+                                <ul>
+                                    <li>Dental Hygiene Mobile Services, PLLC </li>
+                                    <li>San Pablo Avenue, Richmond, CA 94805</li>
+                                    <li>Tel: +1 (510) 374-4540</li>
+                                    <li>FAX: +1 (510) 233-3434 </li>
+                                </ul>
+                                
+                                <img id="contact-image" src="imgs/contact-image.jpg" alt="test-about-image" />
+                                
+                          </div> <!--End contact-info_area-->     
+                        
+                
+                </div><!--End contact-left_content_area-->
+                
+                <div id="contact-right_content_area">
+                	<h3>Contact Form</h3>
+                    	<p>Fill out this form and we'll get back to you ASAP</p>
+                	<!--user form-->
+
+    <form class="forms" name="user_data_form" ACTION="http://www.newmanic.com/formhandler3.asp" METHOD="POST" enctype="text/html" onsubmit="return validateUserData()" >
+   
+   <!--first name-->
+    First Name: 
+  	<input type="text" id="FN" name="first_name" size="32"></input><span class="error1"> *</span><br />		    <br />
+    
+     <!--last name-->
+   	Last Name: 
+  	<input type="text" id="LN"name="last_name" size="32"/><span class="error1"> *</span><br />
+
+    <br />
+    <!--last name-->
+   	Your Email: 
+  	<input type="text" id="email" name="email_name" size="32"/><span class="error1"> *</span><br />
+    <br />
+    
+   
+    
+Comments:
+<div id="contactme"><textarea name="Message" cols="34" rows="7">write me something here!</textarea></div>
+         <input type="hidden" name="Subject" value="webheads mail" />
+         <input type="hidden" name="ToFirst" value="terrance" />
+
+         <input type="hidden" name="ToLast" value="cunningham" />
+         <input type="hidden" name="ToEmail" value="tebence2@hotmail.com" />
+         <input type="hidden" name="Thanks" value="http://edison.seattlecentral.edu/~tcunni04/web205/thanks.html" />
+         <input type="submit"id="button2" value="Click to Submit" />
+        
+</form>
+                
+                </div><!--End contact-right_content_area-->
+            
+            </div><!--End contact-inner_content-->
+        
+        
+        </div><!--End contact-content_area-->
+        
+        <div id="footer">
+        
+        	<ul>
+            	<li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="patient-form.html">Patient Form</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>             
+           	</ul>
+        
+        	<p>© 2010-2013 -  Web Designer  - <a id="port-link" target="_new" href="http://www.terrancecunningham.com/">Terrance Cunningham </a></p>
+        
+        </div><!--End Footer-->
+        
+        <div id="clear"></div><!--End Clear-->
+    
+    </div><!--End Wrapper-->
+</div><!--End Shadow-->
+</body>
+</html>
